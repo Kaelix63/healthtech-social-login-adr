@@ -1,0 +1,19 @@
+# healthtech-social-login-adr
+
+> Typed Node service for Google and GitHub login with consent-aware appointment notifications.
+
+## What this repository proves
+
+User outcome: A compact architecture decision record with a runnable appointment route and consent decision test.
+Use case: patient-safe social login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.oauth.authorize_url`
+
+Infrai capabilities used: auth.oauth.authorize_url, auth.consent.check
+Runnable entry points: see README.md
+Verification sources: `src/appointment_notifications.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

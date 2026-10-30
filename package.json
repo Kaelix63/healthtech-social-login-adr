@@ -1,0 +1,12 @@
+{
+  "name": "healthtech-social-login-adr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/appointment_notifications.ts",
+    "test": "node --experimental-strip-types --test src/appointment_notifications.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" }
+}
